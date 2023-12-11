@@ -1,0 +1,19 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true
+    properties:
+      hibernate :
+        format_sql : true
+    generate-ddl: true # 자동으로 테이블 생성
+    hibernate:
+      ddl-auto: create
+
+  datasource :
+    # mysql 로 설정했기 때문에 dialect 가 mysql 로 자동 설정됨
+    url : jdbc:mysql://localhost:3306/book_manager
+    username : root
+    password: passwd
+    initialization-mode: always # data.sql 등의 파일을 실행
