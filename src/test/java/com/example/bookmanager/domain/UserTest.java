@@ -19,7 +19,7 @@ class UserTest {
     private UserRepository userRepository;
 
     @Test
-    void test(){
+    void test(){ //Lombok Test
         User noUser = new User();
         noUser.setName("noUser");
         noUser.setEmail("noUser@email.com");

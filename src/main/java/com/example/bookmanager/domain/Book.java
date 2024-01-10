@@ -7,7 +7,6 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -64,5 +63,5 @@ public class Book extends BaseEntity {
 //    @PreUpdate
 //    private void perUpdate(){
 //        this.updatedAt = LocalDateTime.now();
-//    }r
+//    }
 }
